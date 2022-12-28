@@ -1,0 +1,7 @@
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.csproj.AssemblyReference.cache
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.csproj.SuggestedBindingRedirects.cache
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.Form1.resources
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.Form2.resources
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.Properties.Resources.resources
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.csproj.GenerateResource.cache
+D:\Pframe\Pframe\PframeTest\obj\Release\PframeTest.csproj.CoreCompileInputs.cache

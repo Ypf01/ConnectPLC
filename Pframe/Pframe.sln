@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pframe", "Pframe\Pframe.csproj", "{66A442E7-DD63-4593-A428-FFDCDFAF473B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PframeTest", "PframeTest\PframeTest.csproj", "{0DFE7F5C-7FDC-4079-AB47-7031F79854D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESDtest", "ESDtest\ESDtest.csproj", "{97779341-8096-4D84-9772-6907D73A5626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omron", "Omron\Omron.csproj", "{CBD9BEB5-CFFD-4DBB-92E3-6DA6972021FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66A442E7-DD63-4593-A428-FFDCDFAF473B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A442E7-DD63-4593-A428-FFDCDFAF473B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A442E7-DD63-4593-A428-FFDCDFAF473B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A442E7-DD63-4593-A428-FFDCDFAF473B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFE7F5C-7FDC-4079-AB47-7031F79854D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFE7F5C-7FDC-4079-AB47-7031F79854D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFE7F5C-7FDC-4079-AB47-7031F79854D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFE7F5C-7FDC-4079-AB47-7031F79854D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97779341-8096-4D84-9772-6907D73A5626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97779341-8096-4D84-9772-6907D73A5626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97779341-8096-4D84-9772-6907D73A5626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97779341-8096-4D84-9772-6907D73A5626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD9BEB5-CFFD-4DBB-92E3-6DA6972021FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD9BEB5-CFFD-4DBB-92E3-6DA6972021FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD9BEB5-CFFD-4DBB-92E3-6DA6972021FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD9BEB5-CFFD-4DBB-92E3-6DA6972021FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62FB3317-EAAB-482E-8B8E-77AD0ADB6CFB}
+	EndGlobalSection
+EndGlobal

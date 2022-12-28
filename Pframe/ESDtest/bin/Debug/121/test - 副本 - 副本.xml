@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <NodeClass Name="PLC设备" Description="各种PLC控制设备" />
+  <NodeClass Name="OPC客户端" Description="OPC相关客户端" />
+  <NodeClass Name="Modbus客户端" Description="Modbus相关客户端" />
+  <NodeClass Name="Custom客户端" Description="Custom相关客户端">
+    <CustomNode Name="节点名" Description="描述信息" CustomType="500000" ConnectTimeOut="2000" CreateTime="2021/6/29 14:18:54" ReConnectTime="5000" InstallationDate="2021/6/29 14:18:54" IsActive="True" KeyWay="VarName" UseAlarmCheck="True" IpAddress="192.168.0.3" Port="4002" SkProtocol="Custom" >
+      <CustomGroup Name="组名" Description="变量组名称描述" UpdateRate="250" IsActive="True" Code="A" >
+        <Variable Name="Pause" Description="具体的通讯变量地址及类型" Code="B" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="False" DiscreteAlarmType="True" DiscreteAlarmPriority="0" DiscreteAlarmNote="暂停被激活" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="False" LowAlarmValue="0" LowAlarmPriority="0" LowAlarmNote="" HighAlarmEnable="False" HighAlarmValue="0" HighAlarmPriority="0" HighAlarmNote="" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Bool" />
+        <Variable Name="Auto" Description="具体的通讯变量地址及类型" Code="C" VarAddress="变量地址" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+      </CustomGroup>
+    </CustomNode>
+  </NodeClass>
+  <NodeClass Name="服务器" Description="自定义服务器" />
+</Settings>

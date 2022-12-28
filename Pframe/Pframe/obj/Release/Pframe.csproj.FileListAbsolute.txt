@@ -1,0 +1,2 @@
+D:\Pframe\Pframe\Pframe\obj\Release\Pframe.csproj.AssemblyReference.cache
+D:\Pframe\Pframe\Pframe\obj\Release\Pframe.csproj.CoreCompileInputs.cache

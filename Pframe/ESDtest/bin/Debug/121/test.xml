@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <NodeClass Name="PLC设备" Description="各种PLC控制设备" />
+  <NodeClass Name="OPC客户端" Description="OPC相关客户端" />
+  <NodeClass Name="Modbus客户端" Description="Modbus相关客户端" />
+  <NodeClass Name="Custom客户端" Description="Custom相关客户端">
+    <CustomNode Name="ESD电源" Description="SC200引出区电源" CustomType="100000" ConnectTimeOut="2000" CreateTime="2021/6/29 14:18:54" ReConnectTime="5000" InstallationDate="2021/6/29 14:18:54" IsActive="True" KeyWay="VarName" UseAlarmCheck="True" IpAddress="192.168.0.3" Port="4002" ESDType="Glassman" MaxVoltage="0" MaxCurrent="0">
+      <CustomGroup Name="组对象1" Description="ESD变量组名称" Type="ESD" UpdateRate="250">
+        <Variable Name="变量布尔" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="False" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="具体的通讯变量地址及类型报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="False" LowAlarmValue="0" LowAlarmPriority="0" LowAlarmNote="" HighAlarmEnable="False" HighAlarmValue="0" HighAlarmPriority="0" HighAlarmNote="" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Bool" />
+        <Variable Name="变量布尔不报警" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+      </CustomGroup>
+      <CustomGroup Name="组对象" Description="ESD变量组名称" Type="ESD" UpdateRate="250">
+        <Variable Name="变量short" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="True" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="具体的通讯变量地址及类型报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="True" LowAlarmValue="20" LowAlarmPriority="0" LowAlarmNote="具体的通讯变量地址及类型低报警" HighAlarmEnable="True" HighAlarmValue="40" HighAlarmPriority="0" HighAlarmNote="具体的通讯变量地址及类型高报警" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Short" />
+        <Variable Name="变量不报警" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="UShort" />
+      </CustomGroup>
+      <CustomGroup Name="组对象2" Description="ESD变量组名称" Type="ESD" UpdateRate="250">
+        <Variable Name="变量int" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="True" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="具体的通讯变量地址及类型报警" LoLoAlarmEnable="True" LoLoAlarmValue="5" LoLoAlarmPriority="0" LoLoAlarmNote="具体的通讯变量地址及类型低低报警" LowAlarmEnable="False" LowAlarmValue="0" LowAlarmPriority="0" LowAlarmNote="" HighAlarmEnable="False" HighAlarmValue="0" HighAlarmPriority="0" HighAlarmNote="" HiHiAlarmEnable="True" HiHiAlarmValue="100" HiHiAlarmPriority="0" HiHiAlarmNote="具体的通讯变量地址及类型高高报警" VarType="Int" />
+        <Variable Name="变量bubao" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="UInt" />
+      </CustomGroup>
+      <CustomGroup Name="组对象3" Description="ESD变量组名称" Type="ESD" UpdateRate="250">
+        <Variable Name="变量" Description="具体的通讯变量地址及类型" Type="ESD" VarAddress="ESDVoltage" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="True" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="具体的通讯变量地址及类型报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="True" LowAlarmValue="50" LowAlarmPriority="0" LowAlarmNote="具体的通讯变量地址及类型低报警" HighAlarmEnable="True" HighAlarmValue="400" HighAlarmPriority="0" HighAlarmNote="具体的通讯变量地址及类型高报警" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Float" />
+      </CustomGroup>
+    </CustomNode>
+  </NodeClass>
+  <NodeClass Name="服务器" Description="自定义服务器" />
+</Settings>

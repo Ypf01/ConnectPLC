@@ -1,0 +1,6 @@
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.csproj.AssemblyReference.cache
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.csproj.SuggestedBindingRedirects.cache
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.Form1.resources
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.Properties.Resources.resources
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.csproj.GenerateResource.cache
+D:\Pframe\Pframe\ESDtest\obj\Release\ESDtest.csproj.CoreCompileInputs.cache

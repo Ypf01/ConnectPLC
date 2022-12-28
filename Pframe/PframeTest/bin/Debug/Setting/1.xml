@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <NodeClass Name="PLC设备" Description="各种PLC控制设备">
+    <DeviceNode Name="三菱PLC" Description="锅炉系统1#PLC" DeviceType="10" ConnectTimeOut="2000" ReConnectTime="5000" CreateTime="2021/5/28 17:23:21" InstallationDate="2021/5/28 17:23:21" IsActive="True" MaxErrorTimes="4" KeyWay="VarName" UseAlarmCheck="True" IpAddress="192.168.1.39" Port="6000" IsFX5UMC="false" PlcType="MCBinary">
+      <DeviceGroup Name="D0-20" Description="作为一次批量的字节数据读取" Type="Melsec" StoreArea="D存储区" Length="20" Start="D0" IsActive="true">
+        <Variable Name="D0" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="D0" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Short" />
+        <Variable Name="D1" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="D1" Scale="1" Offset="0" Start="1" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Short" />
+        <Variable Name="D2" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="D2" Scale="1" Offset="0" Start="2" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Short" />
+        <Variable Name="D3" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="D3" Scale="1" Offset="0" Start="3" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Short" />
+        <Variable Name="字符串" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="D4.A" Scale="1" Offset="0" Start="4.A" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="String" />
+      </DeviceGroup>
+      <DeviceGroup Name="X0-20" Description="作为一次批量的字节数据读取" Type="Melsec" StoreArea="X存储区" Length="20" Start="X0" IsActive="true" />
+      <DeviceGroup Name="Y0-20" Description="作为一次批量的字节数据读取" Type="Melsec" StoreArea="Y存储区" Length="20" Start="Y0" IsActive="true">
+        <Variable Name="Y0" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="Y0" Scale="1" Offset="0" Start="0" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+        <Variable Name="YA" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="YA" Scale="1" Offset="0" Start="A" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+        <Variable Name="Y10" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="Y10" Scale="1" Offset="0" Start="10" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+      </DeviceGroup>
+      <DeviceGroup Name="M0-20" Description="作为一次批量的字节数据读取" Type="Melsec" StoreArea="M存储区" Length="20" Start="M0" IsActive="true">
+        <Variable Name="M0" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="M0" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="False" DiscreteAlarmType="True" DiscreteAlarmPriority="0" DiscreteAlarmNote="测试的信号上升沿报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="False" LowAlarmValue="0" LowAlarmPriority="0" LowAlarmNote="" HighAlarmEnable="False" HighAlarmValue="0" HighAlarmPriority="0" HighAlarmNote="" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Bool" />
+        <Variable Name="M1" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="M1" Scale="1" Offset="0" Start="1" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+        <Variable Name="M2" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="M2" Scale="1" Offset="0" Start="2" AccessProperty="只读" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="False" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="测试的信号下降沿报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="False" LowAlarmValue="0" LowAlarmPriority="0" LowAlarmNote="" HighAlarmEnable="False" HighAlarmValue="0" HighAlarmPriority="0" HighAlarmNote="" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Bool" />
+        <Variable Name="M3" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="M3" Scale="1" Offset="0" Start="3" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+        <Variable Name="M4" Description="具体的通讯变量地址及类型" Type="Melsec" VarAddress="M4" Scale="1" Offset="0" Start="4" AccessProperty="只读" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+      </DeviceGroup>
+    </DeviceNode>
+  </NodeClass>
+  <NodeClass Name="OPC客户端" Description="OPC相关客户端" />
+  <NodeClass Name="Modbus客户端" Description="Modbus相关客户端" />
+  <NodeClass Name="Custom客户端" Description="Custom相关客户端" />
+  <NodeClass Name="服务器" Description="自定义服务器" />
+</Settings>

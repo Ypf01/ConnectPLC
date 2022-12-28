@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <NodeClass Name="PLC设备" Description="各种PLC控制设备">
+    <DeviceNode Name="7#PLC" Description="合盖7#PLC" DeviceType="160" ConnectTimeOut="2000" ReConnectTime="3000" CreateTime="2021/7/16 14:25:25" InstallationDate="2021/7/16 14:25:25" IsActive="True" MaxErrorTimes="5" KeyWay="VarName" UseAlarmCheck="True" IpAddress="192.168.1.19" Port="44818" Slot="0">
+      <DeviceGroup Name="组对象" Description="欧姆龙测试数据" Type="OmronCIP" IsActive="true">
+	    <Variable Name="test_bool" Description="机台自动状态" Type="OmronCIP" VarAddress="HMI_Btn[4]" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="Bool" />
+		<Variable Name="test_word" Description="机台自动状态" Type="OmronCIP" VarAddress="O_WORD[0]" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="ushort" />
+		<Variable Name="test_dword" Description="机台自动状态" Type="OmronCIP" VarAddress="O_DWORD[1]" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="uint" />
+	    <Variable Name="test_int" Description="机台自动状态" Type="OmronCIP" VarAddress="O_INT[3]" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="short" />
+		<Variable Name="test_dint" Description="机台自动状态" Type="OmronCIP" VarAddress="O_DINT[4]" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="False" ArchiveEnable="False" SetLimitEnable="False" VarType="int" />
+		<Variable Name="7#IN_INT" Description="机台产品计数" Type="OmronCIP" VarAddress="AutoStatus" Scale="1" Offset="0" Start="0" AccessProperty="读写" AlarmEnable="True" ArchiveEnable="False" SetLimitEnable="False" AlarmType="True" DiscreteAlarmType="False" DiscreteAlarmPriority="0" DiscreteAlarmNote="具体的通讯变量地址及类型报警" LoLoAlarmEnable="False" LoLoAlarmValue="0" LoLoAlarmPriority="0" LoLoAlarmNote="" LowAlarmEnable="True" LowAlarmValue="20" LowAlarmPriority="0" LowAlarmNote="测试产品计数低报警" HighAlarmEnable="True" HighAlarmValue="80" HighAlarmPriority="0" HighAlarmNote="测试产品计数高报警" HiHiAlarmEnable="False" HiHiAlarmValue="0" HiHiAlarmPriority="0" HiHiAlarmNote="" VarType="Short" />
+      </DeviceGroup>
+    </DeviceNode>
+  </NodeClass>
+  <NodeClass Name="OPC客户端" Description="OPC相关客户端" />
+  <NodeClass Name="Modbus客户端" Description="Modbus相关客户端" />
+  <NodeClass Name="Custom客户端" Description="Custom相关客户端" />
+  <NodeClass Name="服务器" Description="自定义服务器" />
+</Settings>

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66A442E7-DD63-4593-A428-FFDCDFAF473B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pframe</RootNamespace>
+    <AssemblyName>Pframe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TwinCAT.Ads">
+      <HintPath>bin\Debug\3rd\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\communication\A1EBinaryMessage.cs" />
+    <Compile Include="Communication\Base\IMessage.cs" />
+    <Compile Include="Communication\Base\NetDeviceBase.cs" />
+    <Compile Include="Communication\Base\SerialDeviceBase.cs" />
+    <Compile Include="Communication\communication\CalResult.cs" />
+    <Compile Include="Communication\Common\CommonMethods.cs" />
+    <Compile Include="Communication\Common\ComplexDataType.cs" />
+    <Compile Include="Communication\Common\CPU_Type.cs" />
+    <Compile Include="Communication\Common\DataFormat.cs" />
+    <Compile Include="Communication\Common\DataType.cs" />
+    <Compile Include="Communication\Common\FunctionCode.cs" />
+    <Compile Include="Communication\Common\KeyenceProtocolType.cs" />
+    <Compile Include="Communication\Common\LinkDataType.cs" />
+    <Compile Include="Communication\Common\ModbusArea.cs" />
+    <Compile Include="Communication\Common\PrivateImplementationDetails.cs" />
+    <Compile Include="Communication\Common\SimpleHybirdLock.cs" />
+    <Compile Include="Communication\Common\StoreType.cs" />
+    <Compile Include="Communication\Common\VarType.cs" />
+    <Compile Include="Communication\Custom\AIBUS.cs" />
+    <Compile Include="Communication\Custom\AIBUSParam.cs" />
+    <Compile Include="Communication\Custom\ESD.cs" />
+    <Compile Include="Communication\Custom\ESDState.cs" />
+    <Compile Include="Communication\Custom\MT850H.cs" />
+    <Compile Include="Communication\Custom\OpenProtocol.cs" />
+    <Compile Include="Communication\Custom\Sk.cs" />
+    <Compile Include="Communication\Custom\VD.cs" />
+    <Compile Include="Communication\Custom\VDState.cs" />
+    <Compile Include="Communication\DataConvert\BitLib.cs" />
+    <Compile Include="Communication\DataConvert\ByteArray.cs" />
+    <Compile Include="Communication\DataConvert\ByteArrayLib.cs" />
+    <Compile Include="Communication\DataConvert\ByteLib.cs" />
+    <Compile Include="Communication\DataConvert\Conversion.cs" />
+    <Compile Include="Communication\DataConvert\DoubleLib.cs" />
+    <Compile Include="Communication\DataConvert\FloatLib.cs" />
+    <Compile Include="Communication\DataConvert\IntLib.cs" />
+    <Compile Include="Communication\DataConvert\LongLib.cs" />
+    <Compile Include="Communication\DataConvert\MigrationLib.cs" />
+    <Compile Include="Communication\DataConvert\ParityHelper.cs" />
+    <Compile Include="Communication\DataConvert\ShortLib.cs" />
+    <Compile Include="Communication\DataConvert\StringLib.cs" />
+    <Compile Include="Communication\DataConvert\Timers.cs" />
+    <Compile Include="Communication\DataConvert\UIntLib.cs" />
+    <Compile Include="Communication\DataConvert\ULongLib.cs" />
+    <Compile Include="Communication\DataConvert\UShortLib.cs" />
+    <Compile Include="Communication\communication\FinsMessage.cs" />
+    <Compile Include="Communication\communication\MCAsciiMessage.cs" />
+    <Compile Include="Communication\communication\MCBinaryMessage.cs" />
+    <Compile Include="Communication\communication\ModbusASCIIMsg.cs" />
+    <Compile Include="Communication\communication\ModbusRTUMsg.cs" />
+    <Compile Include="Communication\communication\ModbusTCPMsg.cs" />
+    <Compile Include="Communication\communication\ModbusTcpServer.cs" />
+    <Compile Include="Communication\Modbus\Interface\IModbusMaster.cs" />
+    <Compile Include="Communication\Modbus\Interface\IModbusMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusAsciiMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusAsciiOverTcpMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusRtuMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusRtuOverTcpMessage.cs" />
+    <Compile Include="Communication\Modbus\Message\ModbusTcpMessage.cs" />
+    <Compile Include="Communication\Modbus\ModbusAscii.cs" />
+    <Compile Include="Communication\Modbus\ModbusAsciiOverTcp.cs" />
+    <Compile Include="Communication\Modbus\ModbusAsciiOverUdp.cs" />
+    <Compile Include="Communication\Modbus\ModbusNetBase.cs" />
+    <Compile Include="Communication\Modbus\ModbusRtu.cs" />
+    <Compile Include="Communication\Modbus\ModbusRtuOverTcp.cs" />
+    <Compile Include="Communication\Modbus\ModbusRtuOverUdp.cs" />
+    <Compile Include="Communication\Modbus\ModbusSerialBase.cs" />
+    <Compile Include="Communication\Modbus\ModbusTcp.cs" />
+    <Compile Include="Communication\Modbus\ModbusUdp.cs" />
+    <Compile Include="Communication\PLC\AB\ABCIP.cs" />
+    <Compile Include="Communication\PLC\AB\ABMessage.cs" />
+    <Compile Include="Communication\PLC\AB\ABStruct.cs" />
+    <Compile Include="Communication\PLC\Beckoff\Beckhoff.cs" />
+    <Compile Include="Communication\PLC\Common\NetABS7DeviceBase.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusAscii.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusDataType.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusEthernet.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusEthernetType.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusRtu.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusSerial.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusSerialType.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusTcp.cs" />
+    <Compile Include="Communication\PLC\Delta\DeltaModbusUdp.cs" />
+    <Compile Include="Communication\PLC\Inovance\InovanceDataType.cs" />
+    <Compile Include="Communication\PLC\Inovance\InovanceModbus.cs" />
+    <Compile Include="Communication\PLC\Keyence\Keyence.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyenceHelper.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyenceLink.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyenceMCBinary.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyenceMcDataType.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyenceSerial.cs" />
+    <Compile Include="Communication\PLC\Keyence\KeyencsMCAscii.cs" />
+    <Compile Include="Communication\PLC\Melsec\FXStoreType.cs" />
+    <Compile Include="Communication\PLC\Melsec\Melsec.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecA1EDataType.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecFXLink.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecFxSerial.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecHelper.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecMCA1E.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecMCAscii.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecMCBinary.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecMcDataType.cs" />
+    <Compile Include="Communication\PLC\Melsec\MelsecProtocolType.cs" />
+    <Compile Include="Communication\PLC\Omron\ErrorStatus.cs" />
+    <Compile Include="Communication\PLC\Omron\FinsDataType.cs" />
+    <Compile Include="Communication\PLC\Omron\Hostlink.cs" />
+    <Compile Include="Communication\PLC\Omron\OmronCipNet.cs" />
+    <Compile Include="Communication\PLC\Omron\OmronFinsTCP.cs" />
+    <Compile Include="Communication\PLC\Omron\OmronFinsUDP.cs" />
+    <Compile Include="Communication\PLC\Panasonic\Mewtocol.cs" />
+    <Compile Include="Communication\PLC\Panasonic\PanasonicMcNet.cs" />
+    <Compile Include="Communication\PLC\Siemens\Header.cs" />
+    <Compile Include="Communication\PLC\Siemens\Parameter.cs" />
+    <Compile Include="Communication\PLC\Siemens\S7Message.cs" />
+    <Compile Include="Communication\PLC\Siemens\SiemensGroup.cs" />
+    <Compile Include="Communication\PLC\Siemens\SiemensPPI.cs" />
+    <Compile Include="Communication\PLC\Siemens\SiemensS7.cs" />
+    <Compile Include="Communication\PLC\Siemens\SiemensVar.cs" />
+    <Compile Include="Communication\PLC\Xinje\XinjeXCDataType.cs" />
+    <Compile Include="Communication\PLC\Xinje\XinjeXCModbus.cs" />
+    <Compile Include="Communication\Tools\AuthorizationHelper.cs" />
+    <Compile Include="Communication\Tools\DataGridViewStyle.cs" />
+    <Compile Include="Communication\Tools\DataValidate.cs" />
+    <Compile Include="Communication\Tools\EmailHelper.cs" />
+    <Compile Include="Communication\Tools\IniConfigHelper.cs" />
+    <Compile Include="Communication\Tools\Regedit.cs" />
+    <Compile Include="Communication\Tools\XmlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting\Node\Custom\NodeSk.cs" />
+    <Compile Include="Setting\Node\Group\SkGroup.cs" />
+    <Compile Include="Setting\Node\Variable\SKVariable.cs" />
+    <Compile Include="Setting\setting\ABCIPCFG.cs" />
+    <Compile Include="Setting\setting\AIBUSCFG.cs" />
+    <Compile Include="Setting\setting\AlarmEventArgs.cs" />
+    <Compile Include="Setting\setting\BeckhoffCFG.cs" />
+    <Compile Include="Setting\setting\CommMethod.cs" />
+    <Compile Include="Setting\setting\Common.cs" />
+    <Compile Include="Setting\setting\ConfigEnitity.cs" />
+    <Compile Include="Setting\setting\DeltaEthernetCFG.cs" />
+    <Compile Include="Setting\setting\DeltaSerialCFG.cs" />
+    <Compile Include="Setting\setting\DeltaStoreArea.cs" />
+    <Compile Include="Setting\setting\SKCFG.cs" />
+    <Compile Include="Setting\setting\ESDCFG.cs" />
+    <Compile Include="Setting\setting\FXLinkCFG.cs" />
+    <Compile Include="Setting\setting\FXSerialCFG.cs" />
+    <Compile Include="Setting\setting\ModbusRTUOverTCPCFG.cs" />
+    <Compile Include="Setting\setting\ModbusRTUOverUDPCFG.cs" />
+    <Compile Include="Setting\setting\ModbusTCPServerCFG.cs" />
+    <Compile Include="Setting\setting\SiemensPPIStoreArea.cs" />
+    <Compile Include="Setting\setting\HostlinkCFG.cs" />
+    <Compile Include="Setting\setting\InovanceCFG.cs" />
+    <Compile Include="Setting\setting\InovanceStoreArea.cs" />
+    <Compile Include="Setting\setting\IXmlConvert.cs" />
+    <Compile Include="Setting\setting\KeyenceCFG.cs" />
+    <Compile Include="Setting\setting\KeyenceProtocol.cs" />
+    <Compile Include="Setting\setting\KeyenceSerialCFG.cs" />
+    <Compile Include="Setting\setting\KeyenceStoreArea.cs" />
+    <Compile Include="Setting\setting\KeyWay.cs" />
+    <Compile Include="Setting\setting\MelsecCFG.cs" />
+    <Compile Include="Setting\setting\MelsecProtocol.cs" />
+    <Compile Include="Setting\setting\MelsecStoreArea.cs" />
+    <Compile Include="Setting\setting\MewtocolCFG.cs" />
+    <Compile Include="Setting\setting\ModbusASCIICFG.cs" />
+    <Compile Include="Setting\setting\ModbusASCIIOverTCPCFG.cs" />
+    <Compile Include="Setting\setting\ModbusASCIIOverUDPCFG.cs" />
+    <Compile Include="Setting\setting\ModbusRTUCFG.cs" />
+    <Compile Include="Setting\setting\ModbusStoreArea.cs" />
+    <Compile Include="Setting\setting\ModbusTCPCFG.cs" />
+    <Compile Include="Setting\setting\ModbusUDPCFG.cs" />
+    <Compile Include="Setting\setting\MQTTVar.cs" />
+    <Compile Include="Setting\setting\MT850HCFG.cs" />
+    <Compile Include="Setting\Node\Custom\CustomNode.cs" />
+    <Compile Include="Setting\Node\Custom\NodeAIBUS.cs" />
+    <Compile Include="Setting\Node\Custom\NodeESD.cs" />
+    <Compile Include="Setting\Node\Custom\NodeMT850H.cs" />
+    <Compile Include="Setting\Node\Custom\NodeVD.cs" />
+    <Compile Include="Setting\Node\Device\DeviceNode.cs" />
+    <Compile Include="Setting\Node\Device\NodeABCIP.cs" />
+    <Compile Include="Setting\Node\Device\NodeBeckhoff.cs" />
+    <Compile Include="Setting\Node\Device\NodeDeltaEthernet.cs" />
+    <Compile Include="Setting\Node\Device\NodeDeltaSerial.cs" />
+    <Compile Include="Setting\Node\Device\NodeFXLink.cs" />
+    <Compile Include="Setting\Node\Device\NodeFXSerial.cs" />
+    <Compile Include="Setting\Node\Device\NodeInovance.cs" />
+    <Compile Include="Setting\Node\Device\NodeKeyence.cs" />
+    <Compile Include="Setting\Node\Device\NodeKeyenceSerial.cs" />
+    <Compile Include="Setting\Node\Device\NodeMelsec.cs" />
+    <Compile Include="Setting\Node\Device\NodeMewtocol.cs" />
+    <Compile Include="Setting\Node\Device\NodeOmron.cs" />
+    <Compile Include="Setting\Node\Device\NodeOmronCIP.cs" />
+    <Compile Include="Setting\Node\Device\NodeOmronHostlink.cs" />
+    <Compile Include="Setting\Node\Device\NodeSiemens.cs" />
+    <Compile Include="Setting\Node\Device\NodeSiemensPPI.cs" />
+    <Compile Include="Setting\Node\Device\NodeXinjeXC.cs" />
+    <Compile Include="Setting\Node\Group\ABCIPDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\AIBUSGroup.cs" />
+    <Compile Include="Setting\Node\Group\BeckhoffDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\DeltaEthernetDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\DeltaSerialDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\ESDGroup.cs" />
+    <Compile Include="Setting\Node\Group\FXLinkDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\XinjeXCDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\FXSerialDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusTCPServerGroup.cs" />
+    <Compile Include="Setting\Node\Group\OmronCIPDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\InovanceDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\KeyenceDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\KeyenceSerialDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\MelsecDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\MewtocolDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusASCIIGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusASCIIOverTCPGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusASCIIOverUDPGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusRTUGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusRTUOverTCPGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusRTUOverUDPGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusTCPGroup.cs" />
+    <Compile Include="Setting\Node\Group\ModbusUDPGroup.cs" />
+    <Compile Include="Setting\Node\Group\MT850HGroup.cs" />
+    <Compile Include="Setting\Node\Group\OmronDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\OmronHostlinkDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\OPCDAGroup.cs" />
+    <Compile Include="Setting\Node\Group\OPCUAGroup.cs" />
+    <Compile Include="Setting\Node\Group\OPCUAServerGroup.cs" />
+    <Compile Include="Setting\Node\Group\SiemensDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\SiemensPPIDeviceGroup.cs" />
+    <Compile Include="Setting\Node\Group\VDGroup.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusRTUOverTCP.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusRTUOverUDP.cs" />
+    <Compile Include="Setting\Node\Modbus\ModbusNode.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusASCII.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusASCIIOverTCP.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusASCIIOverUDP.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusRTU.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusTCP.cs" />
+    <Compile Include="Setting\Node\Modbus\NodeModbusUDP.cs" />
+    <Compile Include="Setting\Node\NodeBase\NodeClass.cs" />
+    <Compile Include="Setting\Node\NodeBase\NodeClassInfo.cs" />
+    <Compile Include="Setting\Node\NodeBase\NodeClassRenderItem.cs" />
+    <Compile Include="Setting\Node\Server\NodeModbusTCPServer.cs" />
+    <Compile Include="Setting\Node\Server\NodeOPCUAServer.cs" />
+    <Compile Include="Setting\Node\Server\ServerNode.cs" />
+    <Compile Include="Setting\Node\Variable\ABCIPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\AIBUSVariable.cs" />
+    <Compile Include="Setting\Node\Variable\BeckhoffVariable.cs" />
+    <Compile Include="Setting\Node\Variable\DeltaEthernetVariable.cs" />
+    <Compile Include="Setting\Node\Variable\DeltaSerialVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ESDVariable.cs" />
+    <Compile Include="Setting\Node\Variable\FXLinkVariable.cs" />
+    <Compile Include="Setting\Node\Variable\FXSerialVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusASCIIVariable.cs" />
+    <Compile Include="Setting\Node\Variable\SiemensPPIVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OPCUAServerVariable.cs" />
+    <Compile Include="Setting\Node\Variable\InovanceVariable.cs" />
+    <Compile Include="Setting\Node\Variable\KeyenceSerialVariable.cs" />
+    <Compile Include="Setting\Node\Variable\KeyenceVariable.cs" />
+    <Compile Include="Setting\Node\Variable\MelsecVariable.cs" />
+    <Compile Include="Setting\Node\Variable\MewtocolVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusASCIIOverTCPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusASCIIOverUDPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusRTUOverTCPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusRTUOverUDPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusRTUVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusTCPServerVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusTCPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\ModbusUDPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\MT850HVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OmronCIPVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OmronHostlinkVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OmronVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OPCDAVariable.cs" />
+    <Compile Include="Setting\Node\Variable\OPCUAVariable.cs" />
+    <Compile Include="Setting\Node\Variable\SiemensVariable.cs" />
+    <Compile Include="Setting\Node\Variable\VariableNode.cs" />
+    <Compile Include="Setting\Node\Variable\VDVariable.cs" />
+    <Compile Include="Setting\Node\Variable\XinjeXCVariable.cs" />
+    <Compile Include="Setting\setting\OmronCFG.cs" />
+    <Compile Include="Setting\setting\OmronCIPCFG.cs" />
+    <Compile Include="Setting\setting\OmronProtocol.cs" />
+    <Compile Include="Setting\setting\OmronStoreArea.cs" />
+    <Compile Include="Setting\setting\OPCDAType.cs" />
+    <Compile Include="Setting\setting\PanasonicStoreArea.cs" />
+    <Compile Include="Setting\setting\ReadWrite.cs" />
+    <Compile Include="Setting\setting\SiemensCFG.cs" />
+    <Compile Include="Setting\setting\SiemensPLCType.cs" />
+    <Compile Include="Setting\setting\SiemensPPICFG.cs" />
+    <Compile Include="Setting\setting\SiemensStoreArea.cs" />
+    <Compile Include="Setting\setting\VDCFG.cs" />
+    <Compile Include="Setting\setting\XinjeXCCFG.cs" />
+    <Compile Include="Setting\setting\XinjeXCStoreArea.cs" />
+    <Compile Include="Setting\setting\XMLCFG.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,6 @@
+D:\Pframe\Pframe\Omron\obj\Release\Omron.csproj.AssemblyReference.cache
+D:\Pframe\Pframe\Omron\obj\Release\Omron.csproj.SuggestedBindingRedirects.cache
+D:\Pframe\Pframe\Omron\obj\Release\Omron.Form1.resources
+D:\Pframe\Pframe\Omron\obj\Release\Omron.Properties.Resources.resources
+D:\Pframe\Pframe\Omron\obj\Release\Omron.csproj.GenerateResource.cache
+D:\Pframe\Pframe\Omron\obj\Release\Omron.csproj.CoreCompileInputs.cache
